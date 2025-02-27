@@ -69,6 +69,44 @@ header, footer {
   z-index: 1000;
 }
 
+.project-section {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Example: Different layouts for different projects */
+.bidify {
+  flex-direction: column;
+}
+
+.jims {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.jims .text-container {
+  width: 50%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.holidaze .dashboard-demo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
