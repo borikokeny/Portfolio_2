@@ -16,5 +16,6 @@ export default defineConfig({
         additionalData: `@import "src/scss/_variables.scss";`
       }
     }
-  }
+  },
+  base: "/Portfolio_2/",
 });
