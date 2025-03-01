@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/borikokeny/Portfolio_2/issues"
   },
-  "homepage": "https://borikokeny.github.io/Portfolio_2/",
+  "homepage": "https://borikokeny.github.io",
   "description": "",
   "dependencies": {
     "bootstrap": "^5.3.3",
