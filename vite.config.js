@@ -5,18 +5,75 @@
 // export default defineConfig({
 //   plugins: [react()],
 // })
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+// import { defineConfig } from 'vite';
+// import react from '@vitejs/plugin-react';
 
-export default defineConfig({
-  plugins: [react()],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "src/scss/_variables.scss";`,
-        includePaths: ["node_modules"], 
-      }
-    }
-  },
-  base: "/Portfolio_2/",
+// export default defineConfig({
+//   plugins: [react()],
+//   css: {
+//     preprocessorOptions: {
+//       scss: {
+//         additionalData: `@import "src/scss/_variables.scss";`,
+//         includePaths: ["node_modules"], 
+//       }
+//     }
+//   },
+//   base: "/Portfolio_2/",
+// });
+
+
+
+// import { defineConfig } from 'vite';
+// import react from '@vitejs/plugin-react';
+// import path from 'path';
+
+// export default defineConfig({
+//   plugins: [react()],
+//   css: {
+//     preprocessorOptions: {
+//       scss: {
+//         additionalData: `@use "bootstrap/scss/functions" as *;`
+//       }
+//     }
+//   },
+//   resolve: {
+//     alias: {
+//       '@': path.resolve(__dirname, 'src'),
+//       'bootstrap': path.resolve(__dirname, 'node_modules/bootstrap')
+//     }
+//   },
+//   base: mode === "production" ? "/Portfolio_2/" : "/",
+// });
+
+
+
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig(({ command, mode }) => {
+  return {
+    plugins: [react()],
+    base: mode === "production" ? "/Portfolio_2/" : "/", // Fix for local vs. GitHub Pages
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "src/scss/_variables.scss";`,
+        },
+      },
+    },
+  };
 });
+
+// import { defineConfig } from 'vite';
+// import react from '@vitejs/plugin-react';
+
+// export default defineConfig({
+//   plugins: [react()],
+//   css: {
+//     preprocessorOptions: {
+//       scss: {
+//         additionalData: `@import "src/scss/_variables.scss";`
+//       }
+//     }
+//   }
+// });
