@@ -1,9 +1,10 @@
 import React from "react";
+import hero from "../images/Hero.jpg";
 
 export default function Home() {
   return (
-    <section id="home" className="full-height bg-primary text-white d-flex align-items-center justify-content-center" >
-      <button className="btn btn-warning">buuuuton</button>
+    <section id="home" className="full-heights position-relative" >
+     {/* <img src={hero} alt="Hero background" className="hero-img" /> */}
     </section>
   );
 }

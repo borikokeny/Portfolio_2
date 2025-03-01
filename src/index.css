@@ -27,7 +27,6 @@ main {
   overflow-y: auto;
 }
 
-
 body {
   margin: 0;
   display: flex;
@@ -48,7 +47,6 @@ ul {
   list-style-type: disc; /* Ensures bullet points */
 }
 
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -68,12 +66,57 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-header, footer {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Ensure height is not too large */
+  background: white;
+  z-index: 1000;
+}
+
+footer {
   position: fixed;
   width: 100%;
   background: white;
   z-index: 1000;
 }
+
+
+
+.full-heights {
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("../src/images/Hero.jpg"); /* Path to your image */
+  /* height: 50%; */
+  background-size: cover; /* Ensures image covers entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  position: relative;
+  height: calc(100vh - 60px);
+  /* width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  position: relative;
+  padding-top: 60px; */
+}
+
+/* .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
 
 .project-section {
   min-height: 100vh; /* Full viewport height */
@@ -122,7 +165,7 @@ header, footer {
   width: 50%;
 }
 
-.image-container{
+.image-container {
   max-width: 100%;
   height: auto;
   display: block;
@@ -150,9 +193,9 @@ img {
   display: grid;
   grid-template-columns: 5fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "a c"
-  "b c";
+  grid-template-areas:
+    "a c"
+    "b c";
   gap: 10px;
   height: 80vh;
 }
@@ -179,7 +222,9 @@ img {
   max-width: 600px; /* Prevent text from stretching too wide */
 }
 
-.a h1, .a h3, .a h5 {
+.a h1,
+.a h3,
+.a h5 {
   margin-bottom: 10px; /* Add spacing between headers */
 }
 
@@ -235,7 +280,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.full-height {
+/* .full-height {
   height: 100vh;
   padding-top: 80px;
-}
+} */
