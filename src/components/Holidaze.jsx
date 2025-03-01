@@ -56,15 +56,26 @@ const Holidaze = () => {
         <img src={holidazeTablet} alt="tablet" className="w-25 mb-5" />
         <img src={holidazeDesktop} alt="tablet" className="w-50" />
       </div>
-      <div className="c">
-        <img src={tailwind} className="w-100 px-3" />
-        <img src={react} className="w-100 px-4" />
-        <img src={css} className="w-100 px-3" />
-        <img src={api} className="w-100 px-3" />
-        <img src={adobe} className="w-100 px-4" />
-        <img src={vite} className="w-100 px-4" />
-        <img src={html} className="w-100 mb-3" />
-        <img src={javascript} className="w-100 px-3" />
+      <div className="c col-lg-1 col-md-12 d-flex flex-wrap justify-content-center mt-3" id="dev-elements">
+            <img src={tailwind} className="col-6 col-lg-12 mb-2 px-2 img-fluid" />
+                  <img src={react} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+                  <img src={css} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+                  <img src={api} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+                  <img src={adobe} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+                  <img src={vite} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+                  <img src={html} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+                  <img
+                    src={javascript}
+                    className="col-6 col-lg-12 mb-3 px-2 img-fluid"
+                  />
+        {/* <img src={tailwind} className="w-25 px-3 img-fluid" />
+        <img src={react} className="w-25 px-4 img-fluid" />
+        <img src={css} className="w-25 px-3 img-fluid" />
+        <img src={api} className="w-25 px-3 img-fluid" />
+        <img src={adobe} className="w-25 px-4 img-fluid" />
+        <img src={vite} className="w-25 px-4 img-fluid" />
+        <img src={html} className="w-25 mb-3 img-fluid" />
+        <img src={javascript} className="w-25 px-3 img-fluid" /> */}
       </div>
     </section>
   );

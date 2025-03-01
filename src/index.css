@@ -83,8 +83,6 @@ footer {
   z-index: 1000;
 }
 
-
-
 .full-heights {
   /* width: 100vw; */
   height: 100vh;
@@ -119,7 +117,7 @@ footer {
 } */
 
 .project-section {
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,14 +159,9 @@ footer {
 }
 /* Example: Different layouts for different projects */
 .bidify {
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
-.jims {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around; */
-}
 
 .jims .text-container {
   width: 50%;
@@ -208,6 +201,8 @@ img {
   gap: 10px;
   height: 80vh;
 }
+
+
 
 /* .a {
   grid-area: a;
@@ -297,11 +292,41 @@ html {
   .project-section .row {
     flex-direction: column; /* Stack items vertically */
   }
-  
+
   .project-section .col-6,
   .project-section .col-5,
   .project-section .col-1 {
     width: 100%; /* Full width on smaller screens */
     text-align: center; /* Center content */
+  }
+}
+
+/* @media (min-width: 768px) {
+  #dev-elements {
+    display: none !important;
+  }
+} */
+@media (max-width: 991px) {  /* lg breakpoint in Bootstrap */
+  #dev-elements img {
+    width: 25% !important;  /* Force w-25 on smaller screens */
+  }
+}
+
+@media (max-width: 991px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* One column layout */
+  }
+
+  .c {
+    order: 3; /* Move the dev-elements div below other sections */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .c img {
+    width: 25% !important; /* Ensure two images per row */
+    background-color: #535bf2;
   }
 }

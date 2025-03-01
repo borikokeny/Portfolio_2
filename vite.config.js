@@ -4,14 +4,14 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
   base: mode === "production" ? "/Portfolio_2/" : "/", // GitHub Pages fix only in production
-  build: {
-    outDir: "dist",
-    assetsDir: "assets",
-  },
-  server: {
-    port: 5173, // Keep a fixed port
-    strictPort: true, // Prevent auto-changing ports
-  },
+  // build: {
+  //   outDir: "dist",
+  //   assetsDir: "assets",
+  // },
+  // server: {
+  //   port: 5173, // Keep a fixed port
+  //   strictPort: true, // Prevent auto-changing ports
+  // },
   css: {
     preprocessorOptions: {
       scss: {
