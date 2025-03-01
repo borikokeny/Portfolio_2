@@ -53,7 +53,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ command, mode }) => {
   return {
     plugins: [react()],
-    base: mode === "production" ? "/Portfolio_2/" : "/", // Fix for local vs. GitHub Pages
+    base: "/Portfolio_2/",
+    // base: mode === "production" ? "/Portfolio_2/" : "/", // Fix for local vs. GitHub Pages
     css: {
       preprocessorOptions: {
         scss: {
