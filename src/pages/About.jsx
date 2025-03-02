@@ -20,9 +20,9 @@ export default function About() {
               </strong>
               . With over 20 years of experience in product development,
               purchasing, and business development, I am now completing a
-              front-end education to combine
+              front-end education to combine{" "} 
               <strong>
-                technical expertise with market-driven innovation
+                  technical expertise with market-driven innovation
               </strong>
               .
             </p>
@@ -51,7 +51,6 @@ export default function About() {
             </ul>
             <div className="container mt-3">
               <div className="row">
-             
                 <div className="col-lg-8 col-12 d-flex flex-column text-start">
                   <h4>Work Experience</h4>
                   <h5>Creative director and Merchandiser</h5>

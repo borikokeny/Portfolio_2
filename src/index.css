@@ -134,7 +134,6 @@ footer {
   flex-wrap: wrap; 
 }
 
-
 .project-section .col-6,
 .project-section .col-5 {
   display: flex;
@@ -166,10 +165,20 @@ img {
   justify-content: center;
 }
 
-.holidaze .dashboard-demo {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+.bidify {
+  margin-top: 30px;
+}
+
+.holidaze {
+  margin-top: -70px;
+}
+
+.jims {
+  margin-top: -10rem;
+}
+
+.icon-list a {
+  color: black;
 }
 
 @media (prefers-color-scheme: light) {
@@ -184,13 +193,32 @@ img {
     background-color: #f9f9f9;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 @media (max-width: 576px) {
-  .bidify {
+  /* .bidify {
     margin-top: -6rem;
+  } */
+
+  .holidaze {
+    margin-top: 10px;
+  }
+
+  .jims {
+    margin-top: 5px;
+  }
+
+  #about {
+    margin-top: 252px;
+  }
+}
+
+@media  (min-width: 765px) {
+  .bidify {
+    margin-top: 90px;
   }
 }
 
@@ -202,9 +230,22 @@ html {
     text-align: center;
   }
 
+  .holidaze {
+    margin-top: 15px;
+  }
+
+  .jims {
+    margin-top: 10px;
+  }
 
   #about {
-   margin-top: 150px;
+   margin-top: 245px;
+  }
+}
+
+@media (max-width: 992px) {
+  .jims {
+    margin-top: 20px;
   }
 }
 
@@ -218,7 +259,6 @@ html {
   #dev-elements img {
     width: 100% !important; 
     padding: 0%;
-
   }
 }
 
@@ -227,7 +267,7 @@ html {
     justify-content: center;
   }
   #dev-elements img {
-    width: 25% !important; 
+    width: 15% !important; 
   }
 }
 

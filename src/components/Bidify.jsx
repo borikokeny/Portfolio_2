@@ -12,7 +12,11 @@ import html from "../images/Html.png";
 const Bidify = () => {
   return (
     <section className="project-section bidify container">
-      <div className="row">
+    <span class="border-bottom">
+      <div className="row mt-1 mb-5">
+      <h4>I am a <strong>Front-End Developer</strong> with over 20 years of experience in product development,
+      purchasing, and business development.</h4>
+      <h3>Here are the <strong>projects</strong> I was working on lately:</h3>
         <div className="col-5 me-3">
           <h1 className="mb-3">Bidify</h1>
           <p className="text-start mx-3">
@@ -73,6 +77,7 @@ const Bidify = () => {
           />
         </div>
       </div>
+      </span>
     </section>
   );
 };

@@ -12,7 +12,8 @@ import html from "../images/HTML.jpg";
 const Holidaze = () => {
   return (
     <section className="project-section holidaze container">
-      <div className="row align-items-center">
+      <span class="border-bottom">
+      <div className="row align-items-center mb-5">
         <div className="col-lg-6 col-md-12 d-flex flex-column justify-content-between">
           <h1>Holidaze</h1>
           <p>A modern booking platform for holiday rentals.</p>
@@ -83,6 +84,7 @@ const Holidaze = () => {
           <img src={javascript} className="col-6 col-lg-12 px-2 img-fluid" />
         </div>
       </div>
+      </span>
     </section>
   );
 };
