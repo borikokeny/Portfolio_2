@@ -1,3 +1,29 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig(({ mode }) => ({
+  plugins: [react()],
+  base: mode === "production" ? "/Portfolio_2/" : "/", // GitHub Pages fix only in production
+  // build: {
+  //   outDir: "dist",
+  //   assetsDir: "assets",
+  // },
+  // server: {
+  //   port: 5173, // Keep a fixed port
+  //   strictPort: true, // Prevent auto-changing ports
+  // },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "src/scss/_variables.scss";`,
+      },
+    },
+  },
+}));
+
+
+
+
 // import { defineConfig } from 'vite'
 // import react from '@vitejs/plugin-react'
 
@@ -47,22 +73,23 @@
 
 
 
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
 
-export default defineConfig(({ command, mode }) => {
-  return {
-    plugins: [react()],
-    base: mode === "production" ? "/Portfolio_2/" : "/", // Fix for local vs. GitHub Pages
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@import "src/scss/_variables.scss";`,
-        },
-      },
-    },
-  };
-});
+// export default defineConfig(({ command, mode }) => {
+//   return {
+//     plugins: [react()],
+//     // base: "/Portfolio_2/",
+//     base: mode === "production" ? "/Portfolio_2/" : "/", // Fix for local vs. GitHub Pages
+//     css: {
+//       preprocessorOptions: {
+//         scss: {
+//           additionalData: `@import "src/scss/_variables.scss";`,
+//         },
+//       },
+//     },
+//   };
+// });
 
 // import { defineConfig } from 'vite';
 // import react from '@vitejs/plugin-react';

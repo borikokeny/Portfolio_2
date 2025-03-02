@@ -31,7 +31,7 @@ const Bidify = () => {
         </div>
         <div className="col-5">
           <div className="image-container">
-            <img src={bidifyTablet} alt="desktop" className="w-75 pb-3" />
+            <img src={bidifyTablet} alt="desktop" className="w-75 pb-3 mt-3" />
           </div>
           <h5>Key Features</h5>
           <ul className="text-start mt-3">
@@ -48,20 +48,29 @@ const Bidify = () => {
             href="https://bidify-auction.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="link-body-emphasis mt-3"
+            className="text-primary text-decoration-underline mb-3 d-block"
           >
-            Visit Project
+            Visit Project →
           </a>
         </div>
-        <div className="col-1">
-          <img src={api} className="w-100 mb-3 px-3" />
-          <img src={react} className="w-100 mb-3 px-4" />
-          <img src={css} className="w-100 mb-3 px-3" />
-          <img src={adobe} className="w-100 mb-3 px-4" />
-          <img src={bootstrap} className="w-100 mb-3 px-3" />
-          <img src={vite} className="w-100 mb-3 px-4" />
-          <img src={html} className="w-100 mb-3 px-4" />
-          <img src={javascript} className="w-100 mb-3 px-3" />
+        <div
+          className="col-lg-1 col-md-12 d-flex flex-wrap justify-content-center mt-3"
+          id="dev-elements"
+        >
+          <img src={api} className="col-6 col-lg-12 mb-2 px-2 img-fluid" />
+          <img src={react} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img src={css} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img src={adobe} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img
+            src={bootstrap}
+            className="col-6 col-lg-12 mb-3 px-2 img-fluid"
+          />
+          <img src={vite} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img src={html} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img
+            src={javascript}
+            className="col-6 col-lg-12 mb-3 px-2 img-fluid"
+          />
         </div>
       </div>
     </section>
