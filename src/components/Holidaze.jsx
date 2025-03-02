@@ -1,4 +1,3 @@
-import holidazeTablet from "../images/Holidaze-tablet.jpg";
 import holidazeDesktop from "../images/Holidaze-desktop.jpg";
 import holidazeMobile from "../images/Group 62.jpg";
 import tailwind from "../images/Tailwind.png";
@@ -12,70 +11,77 @@ import html from "../images/HTML.jpg";
 
 const Holidaze = () => {
   return (
-    <section className="grid-container">
-      <div className="a mt-4">
-        <div>
+    <section className="project-section holidaze container">
+      <div className="row align-items-center">
+        <div className="col-lg-6 col-md-12 d-flex flex-column justify-content-between">
           <h1>Holidaze</h1>
           <p>A modern booking platform for holiday rentals.</p>
-          <p>
-            <strong>Customers</strong>– Search, view, and book accommodations.
-          </p>
-          <p>
-            <strong>Venue Managers</strong>– Register, manage listings, and
-            handle bookings.
-          </p>
-          <button><a
-            href="https://bidify-auction.netlify.app/"
+          <h5>Project Overview</h5>
+          <div className="mx-5">
+            <p className="text-start">
+              <strong>Customers</strong>– Search, view, and book accommodations.
+            </p>
+            <p className="text-start">
+              <strong>Venue Managers</strong>– Register, manage listings, and
+              handle bookings.
+            </p>
+          </div>
+
+          <a
+            href="https://holidaze-rentopia.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="link-body-emphasis mt-3"
+            className="text-primary text-decoration-underline mb-3 d-block"
           >
-            Visit Project
-          </a></button> 
+            Visit Project →
+          </a>
+          <img src={holidazeMobile} alt="mobileview" className="w-50 mb-3" />
         </div>
-        <div>
-          <h3>Key Features</h3>
-          <h5>Customer Features</h5>
-          <p>Browse and search for venues</p>
-          <p>View venue details and availability</p>
-          <p>Register and book accommodations</p>
-          <p>Manage upcoming bookings</p>
+        <div className="col-lg-5 col-md-12 d-flex flex-column align-items-center">
+          <div className="image-container mb-3">
+            <img
+              src={holidazeDesktop}
+              alt="desktop view"
+              className="w-100 img-fluid"
+            />
           </div>
-          <div>
-          <h5>Venue Manager Features</h5>
-          <p>Register and manage venues</p>
-          <p>Update and delete venues</p>
-          <p>View bookings for owned venues</p>
-          <h5>User Authentication</h5>
-          <p>Register/login/logout</p>
-          <p> Update user avatar</p>
+
+          <h3 className="mb-3">Key Features</h3>
+
+          <h5 className="mt-2">Customer Features</h5>
+          <ul className="text-start ps-3">
+            <li>Browse and search for venues</li>
+            <li>View venue details and availability</li>
+            <li>Register and book accommodations</li>
+            <li>Manage upcoming bookings</li>
+          </ul>
+
+          <h5 className="mt-2">Venue Manager Features</h5>
+          <ul className="text-start ps-3">
+            <li>Register and manage venues</li>
+            <li>Validate and delete venues</li>
+            <li>View bookings for owned venues</li>
+          </ul>
+
+          <h5 className="mt-2">User Authentication</h5>
+          <ul className="text-start ps-3">
+            <li>Register / Login / Logout</li>
+            <li>Validate user avatar</li>
+          </ul>
         </div>
-      </div>
-      <div className="b">
-        <img src={holidazeMobile} alt="tablet" className="w-25" />
-        <img src={holidazeTablet} alt="tablet" className="w-25 mb-5" />
-        <img src={holidazeDesktop} alt="tablet" className="w-50" />
-      </div>
-      <div className="c col-lg-1 col-md-12 d-flex flex-wrap justify-content-center mt-3" id="dev-elements">
-            <img src={tailwind} className="col-6 col-lg-12 mb-2 px-2 img-fluid" />
-                  <img src={react} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
-                  <img src={css} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
-                  <img src={api} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
-                  <img src={adobe} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
-                  <img src={vite} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
-                  <img src={html} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
-                  <img
-                    src={javascript}
-                    className="col-6 col-lg-12 mb-3 px-2 img-fluid"
-                  />
-        {/* <img src={tailwind} className="w-25 px-3 img-fluid" />
-        <img src={react} className="w-25 px-4 img-fluid" />
-        <img src={css} className="w-25 px-3 img-fluid" />
-        <img src={api} className="w-25 px-3 img-fluid" />
-        <img src={adobe} className="w-25 px-4 img-fluid" />
-        <img src={vite} className="w-25 px-4 img-fluid" />
-        <img src={html} className="w-25 mb-3 img-fluid" />
-        <img src={javascript} className="w-25 px-3 img-fluid" /> */}
+        <div
+          className="col-lg-1 col-md-12 d-flex flex-wrap dev-elements"
+          id="dev-elements"
+        >
+          <img src={tailwind} className="col-6 col-lg-12 mb-2 px-2 img-fluid" />
+          <img src={react} className="col-6 col-lg-12 mb-3 px-3 img-fluid" />
+          <img src={css} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img src={api} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img src={adobe} className="col-6 col-lg-12 mb-3 px-3 img-fluid" />
+          <img src={vite} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img src={html} className="col-6 col-lg-12 mb-3 px-2 img-fluid" />
+          <img src={javascript} className="col-6 col-lg-12 px-2 img-fluid" />
+        </div>
       </div>
     </section>
   );

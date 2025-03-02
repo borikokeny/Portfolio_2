@@ -33,8 +33,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* padding-top: 60px; 
-  padding-bottom: 60px; */
 }
 
 h1 {
@@ -43,8 +41,8 @@ h1 {
 }
 
 ul {
-  padding-left: 20px; /* Adjust indentation */
-  list-style-type: disc; /* Ensures bullet points */
+  padding-left: 20px; 
+  list-style-type: disc; 
 }
 
 button {
@@ -71,7 +69,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px; /* Ensure height is not too large */
+  height: 60px; 
   background: white;
   z-index: 1000;
 }
@@ -126,25 +124,19 @@ footer {
   width: 100%;
 }
 
-/* .project-section .row {
-  flex-grow: 1;
-  height: 100%; 
-  align-items: center; 
-} */
-
 .project-section .row {
   flex-grow: 1;
-  height: auto; /* Allow it to expand */
+  height: auto;
   align-items: center;
-  flex-wrap: wrap; /* Allows stacking on small screens */
+  flex-wrap: wrap; 
 }
+
 
 .project-section .col-6,
 .project-section .col-5 {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Adjusts content vertically */
-  /* height: 100%; */
+  justify-content: center; 
   height: auto;
 }
 
@@ -153,14 +145,10 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* height: 100%; */
   height: auto;
   padding: 20px 0;
 }
-/* Example: Different layouts for different projects */
-.bidify {
-  /* flex-direction: column; */
-}
+
 
 
 .jims .text-container {
@@ -183,91 +171,6 @@ img {
   margin-top: 1rem;
 }
 
-/* .grid-container {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr; 
-  grid-template-rows: 1fr 1fr;
-  gap: 10px; 
-  height: 100vh;
-} */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 5fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "a c"
-    "b c";
-  gap: 10px;
-  height: 80vh;
-}
-
-
-
-/* .a {
-  grid-area: a;
-  background-color: orange;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
-.a {
-  grid-area: a;
-  display: flex;
-  flex-direction: row; /* Stack content vertically */
-  justify-content: space-between; /* Space between sections */
-  align-items: flex-start; /* Align text to the left */
-  padding: 20px; /* Add spacing for better readability */
-  overflow-y: auto; /* Prevents overflow issues */
-  height: 25vh;
-}
-
-.a div {
-  max-width: 600px; /* Prevent text from stretching too wide */
-}
-
-.a h1,
-.a h3,
-.a h5 {
-  margin-bottom: 10px; /* Add spacing between headers */
-}
-
-.a p {
-  margin-bottom: 5px; /* Reduce space between paragraphs */
-}
-
-.a button {
-  background-color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.a button a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
-}
-
-.b {
-  grid-area: b;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
-
-.c {
-  grid-area: c;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 120px;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -284,49 +187,39 @@ html {
   scroll-behavior: smooth;
 }
 
-/* .full-height {
-  height: 100vh;
-  padding-top: 80px;
-} */
+
 @media (max-width: 768px) {
   .project-section .row {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
   }
 
   .project-section .col-6,
   .project-section .col-5,
   .project-section .col-1 {
-    width: 100%; /* Full width on smaller screens */
-    text-align: center; /* Center content */
-  }
-}
-
-/* @media (min-width: 768px) {
-  #dev-elements {
-    display: none !important;
-  }
-} */
-@media (max-width: 991px) {  /* lg breakpoint in Bootstrap */
-  #dev-elements img {
-    width: 25% !important;  /* Force w-25 on smaller screens */
-  }
-}
-
-@media (max-width: 991px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* One column layout */
-  }
-
-  .c {
-    order: 3; /* Move the dev-elements div below other sections */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
+    text-align: center;
   }
+}
 
-  .c img {
-    width: 25% !important; /* Ensure two images per row */
-    background-color: #535bf2;
+@media (min-width: 991px) {
+  .dev-elements {
+    align-self: stretch; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+  #dev-elements img {
+    width: 100% !important; 
+    padding: 0%;
+
+  }
+}
+
+@media (max-width: 991px) {  /* lg breakpoint in Bootstrap */
+  .dev-elements {
+    justify-content: center;
+  }
+  #dev-elements img {
+    width: 25% !important; 
   }
 }
