@@ -10,10 +10,5 @@ export default function Projects() {
     <Holidaze />
     <Jims />
   </section>
-    // <section id="projects" className="full-height bg-primary text-white d-flex align-items-center justify-content-center">
-    //   <Bidify />
-    //   <Holidaze />
-    //   <Jims />
-    // </section>
   );
 }

@@ -13,12 +13,6 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-
-      {/* <div className="card">
-        <button  className="btn btn-warning">
-      
-        </button>
-      </div> */}
     </>
   );
 }
