@@ -188,17 +188,23 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 576px) {
+  .bidify {
+    margin-top: -6rem;
+  }
+}
 
 @media (max-width: 768px) {
-  .project-section .row {
-    flex-direction: column; 
-  }
-
   .project-section .col-6,
   .project-section .col-5,
   .project-section .col-1 {
     width: 100%;
     text-align: center;
+  }
+
+
+  #about {
+   margin-top: 150px;
   }
 }
 

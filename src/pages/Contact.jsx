@@ -2,6 +2,7 @@ import React from "react";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { PiFacebookLogoBold } from "react-icons/pi";
+import { TiSocialGithubCircular } from "react-icons/ti";
 
 export default function Contact() {
   return (
@@ -15,6 +16,9 @@ export default function Contact() {
               </a>
               <a href="https://www.facebook.com/bori.kokeny" target="_blank">
               <PiFacebookLogoBold className="icons p-1" />
+              </a>
+              <a href="https://github.com/borikokeny" target="_blank">
+              <TiSocialGithubCircular className="icons" />
               </a>
               <p className="ms-3">bori@minerali.hu</p>
             </div>
