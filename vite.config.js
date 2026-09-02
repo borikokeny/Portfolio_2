@@ -12,13 +12,13 @@ export default defineConfig(({ mode }) => ({
   //   port: 5173, // Keep a fixed port
   //   strictPort: true, // Prevent auto-changing ports
   // },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "src/scss/_variables.scss";`,
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `@import "src/scss/_variables.scss";`,
+  //     },
+  //   },
+  // },
 }));
 
 
